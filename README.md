@@ -1,8 +1,8 @@
 # Ordering
 
-##Grupo número 9
+## Grupo número 9
 
-##Integrantes
+## Integrantes
 Ferrara Damian
 Ezequiel Garritano Stagnares
 Eric Dangavs
