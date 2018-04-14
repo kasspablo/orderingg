@@ -1,5 +1,13 @@
 # Ordering
 
+##Grupo número 9
+
+##Integrantes
+Ferrara Damian
+Ezequiel Garritano Stagnares
+Eric Dangavs
+Pablo Kass
+
 Aplicación utilizada en la cursada 2018 de Ingenieria de Software. UTN-FRLP
 
 ## Dependencias
