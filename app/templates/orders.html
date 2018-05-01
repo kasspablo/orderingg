@@ -74,6 +74,7 @@
                     <td>Precio unitario</td>
                     <td>Cantidad</td>
                     <td>Precio total</td>
+                    <td>Eliminar</td>
                 </tr>
             </thead>
             <tbody>
@@ -84,6 +85,11 @@
                         <td>{{ price }}</td>
                         <td>{{ quantity }}</td>
                         <td>{{ totalPrice }}</td>
+                        <td>
+                        	<button id="delete-button" class="button is-danger" onclick="refs.api.deleteProduct()">
+                        		<span class="icon"><i class="fas fa-ban"></i></span>
+                        	</button>
+                        </td>
                     </tr>
                 {{/ each }}
             </tbody>
@@ -94,6 +100,7 @@
                     <td></td>
                     <td>Total</td>
                     <td>{{ orderPrice }}</td>
+                    <td></td>
                 </tr>
             </tfoot>
         </table>
