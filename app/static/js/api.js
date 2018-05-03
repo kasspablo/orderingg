@@ -67,7 +67,7 @@ const API = (function () {
                     'Accept': 'application/json',
                     'Content-Type': 'application/json'
                 },
-                body: data
+                body: location.reload()
             }
         ).then(function toJson(r) {
          return r.json();

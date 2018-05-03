@@ -101,9 +101,12 @@ def order_product_detail(pk_order, pk_product):
     if request.method == 'GET':
         return jsonify(order_product.serialize)
     elif request.method == 'DELETE':
-        print('Eliminar')
+        order_product_json = order_product.serialize
 
-        return jsonify(order_product.serialize)
+        db.session.delete(order_product)
+        db.session.commit()
+        return jsonify(order_product_json)
+
     else:
         new_quantity = request.get_json()['quantity']
         new_product = request.get_json()['product']
