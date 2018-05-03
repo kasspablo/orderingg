@@ -58,8 +58,9 @@ const API = (function () {
      * Elimina un producto de una orden
      *
      */
-    function deleteProduct(product) {
-        return fetch(`/order/${ orderId }/product`,
+    function deleteProduct(orderId,productId) {
+     const data = JSON.stringify({ product: productId })
+        return fetch(`/order/${ orderId }/product/${ productId }`,
             {
                 method: 'DELETE',
                 headers: {

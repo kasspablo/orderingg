@@ -86,7 +86,7 @@
                         <td>{{ quantity }}</td>
                         <td>{{ totalPrice }}</td>
                         <td>
-                        	<button id="delete-button" class="button is-danger" onclick="refs.api.deleteProduct()">
+                        	<button id="delete-button" class="button is-danger" onclick="API.deleteProduct(1,{{ id }})">
                         		<span class="icon"><i class="fas fa-ban"></i></span>
                         	</button>
                         </td>

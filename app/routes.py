@@ -101,7 +101,7 @@ def order_product_detail(pk_order, pk_product):
     if request.method == 'GET':
         return jsonify(order_product.serialize)
     elif request.method == 'DELETE':
-        print('Hola Mundo')
+        print('Eliminar')
 
         return jsonify(order_product.serialize)
     else:
